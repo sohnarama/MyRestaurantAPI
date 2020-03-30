@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "connection": "default",
+  "collectionName": "employers",
+  "info": {
+    "name": "employer"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "nom": {
+      "type": "string"
+    },
+    "prenom": {
+      "type": "string"
+    },
+    "adresse": {
+      "type": "string"
+    },
+    "telephone": {
+      "type": "string"
+    },
+    "photodeprofil": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false
+    }
+  }
+}

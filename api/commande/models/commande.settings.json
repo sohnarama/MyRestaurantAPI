@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "connection": "default",
+  "collectionName": "commande_s",
+  "info": {
+    "name": "commande "
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "plats": {
+      "collection": "plat"
+    },
+    "nombredeplats": {
+      "type": "integer"
+    },
+    "libelle": {
+      "type": "string"
+    }
+  }
+}
